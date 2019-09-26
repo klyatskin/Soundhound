@@ -18,12 +18,12 @@ class QueueManager
     }
 
     // multiple treads
-    lazy var dispatchQueue: DispatchQueue = {
+    internal lazy var dispatchQueue: DispatchQueue = {
        return DispatchQueue.init(label: "ConcurrentQueue", attributes: .concurrent)
     }()
 
     // limited amount of threads
-    lazy var operationQueue: OperationQueue = {
+    internal lazy var operationQueue: OperationQueue = {
         var queue = OperationQueue()
         queue.name = "OperationQueue"
         queue.maxConcurrentOperationCount = QueueManager.threadsLimit

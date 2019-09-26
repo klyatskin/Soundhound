@@ -10,14 +10,17 @@ import UIKit
 
 class LazyLabel: UILabel {
 
+    private static var count: Int = 0
     var labelText = "Start/duration = " // some header text...
-    var start: TimeInterval = 0.0
-    let boldAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize:17)]
-    let normAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize:17)]
+    private var start: TimeInterval = 0.0
+    private let boldAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize:16)]
+    private let normAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize:16)]
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.textAlignment = .center
+        self.adjustsFontSizeToFitWidth = true
+        self.minimumScaleFactor = 0.2
         labelSetup()
     }
     
@@ -39,7 +42,7 @@ class LazyLabel: UILabel {
     }
     
     
-    func labelSetup() {
+    private func labelSetup() {
         
         // show start time
         let date = Date()
@@ -47,7 +50,8 @@ class LazyLabel: UILabel {
         let formatter = DateFormatter()
         formatter.dateFormat = " HH:mm:ss"
         let startStr = formatter.string(from: date as Date)
-        labelText = labelText + startStr
+        LazyLabel.count += 1
+        labelText = "(\(LazyLabel.count)) " + labelText + startStr
         self.attributedText = NSAttributedString(string: labelText, attributes: normAttribute)
 
         // initialise slow background task
