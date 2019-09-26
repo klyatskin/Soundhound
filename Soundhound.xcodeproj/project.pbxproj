@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D1C200C6233C75DD00A6A6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200C5233C75DD00A6A6B5 /* AppDelegate.swift */; };
-		D1C200C8233C75DD00A6A6B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200C7233C75DD00A6A6B5 /* ViewController.swift */; };
 		D1C200CB233C75DD00A6A6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C200C9233C75DD00A6A6B5 /* Main.storyboard */; };
 		D1C200CD233C75DF00A6A6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C200CC233C75DF00A6A6B5 /* Assets.xcassets */; };
 		D1C200D0233C75DF00A6A6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C200CE233C75DF00A6A6B5 /* LaunchScreen.storyboard */; };
+		D1C200D8233C76D700A6A6B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200D7233C76D700A6A6B5 /* TableViewController.swift */; };
+		D1C200DA233C778F00A6A6B5 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200D9233C778F00A6A6B5 /* QueueManager.swift */; };
+		D1C200DC233C786800A6A6B5 /* LazyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200DB233C786800A6A6B5 /* LazyLabel.swift */; };
+		D1C200DF233D22A000A6A6B5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C200DD233D22A000A6A6B5 /* TableViewCell.swift */; };
+		D1C200E0233D22A100A6A6B5 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C200DE233D22A000A6A6B5 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1C200C2233C75DD00A6A6B5 /* Soundhound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundhound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C200C5233C75DD00A6A6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1C200C7233C75DD00A6A6B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1C200CA233C75DD00A6A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1C200CC233C75DF00A6A6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1C200CF233C75DF00A6A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1C200D1233C75DF00A6A6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C200D7233C76D700A6A6B5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D1C200D9233C778F00A6A6B5 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		D1C200DB233C786800A6A6B5 /* LazyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLabel.swift; sourceTree = "<group>"; };
+		D1C200DD233D22A000A6A6B5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D1C200DE233D22A000A6A6B5 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				D1C200C5233C75DD00A6A6B5 /* AppDelegate.swift */,
-				D1C200C7233C75DD00A6A6B5 /* ViewController.swift */,
+				D1C200DB233C786800A6A6B5 /* LazyLabel.swift */,
+				D1C200D9233C778F00A6A6B5 /* QueueManager.swift */,
+				D1C200D7233C76D700A6A6B5 /* TableViewController.swift */,
+				D1C200DD233D22A000A6A6B5 /* TableViewCell.swift */,
+				D1C200DE233D22A000A6A6B5 /* TableViewCell.xib */,
 				D1C200C9233C75DD00A6A6B5 /* Main.storyboard */,
 				D1C200CC233C75DF00A6A6B5 /* Assets.xcassets */,
 				D1C200CE233C75DF00A6A6B5 /* LaunchScreen.storyboard */,
@@ -123,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C200D0233C75DF00A6A6B5 /* LaunchScreen.storyboard in Resources */,
+				D1C200E0233D22A100A6A6B5 /* TableViewCell.xib in Resources */,
 				D1C200CD233C75DF00A6A6B5 /* Assets.xcassets in Resources */,
 				D1C200CB233C75DD00A6A6B5 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C200C8233C75DD00A6A6B5 /* ViewController.swift in Sources */,
+				D1C200DF233D22A000A6A6B5 /* TableViewCell.swift in Sources */,
+				D1C200DA233C778F00A6A6B5 /* QueueManager.swift in Sources */,
+				D1C200D8233C76D700A6A6B5 /* TableViewController.swift in Sources */,
+				D1C200DC233C786800A6A6B5 /* LazyLabel.swift in Sources */,
 				D1C200C6233C75DD00A6A6B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
